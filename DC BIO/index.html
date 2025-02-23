@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="Slax.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Slax_yt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: url('https://i.pinimg.com/originals/95/ef/b8/95efb8425d270933e5e890b33ab5ef70.gif') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: rgba(56, 55, 55, 0.123);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid #a200d31e;
+            backdrop-filter: blur(10px);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease-in-out;
+            animation: slideIn 1s ease-in-out;
+        }
+        .avatar:hover {
+            transform: scale(1.1);
+        }
+        .name {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards, glow 1.5s infinite alternate;
+        }
+        
+        .bio {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ff0396b4;
+            margin-bottom: 20px;
+            opacity: 0 px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid rgb(151, 6, 96);
+            width: 0;
+            animation: typing 3s steps(30, end) forwards, fadeIn 1.5s ease-in-out;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .link {
+            background: linear-gradient(90deg, #240b2c, #6c018d);
+            color: rgb(228, 228, 228);
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            display: inline-block;
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+        .link:hover {
+            background: linear-gradient(90deg, #000000, #ff00aa );
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(116, 0, 106, 0.5);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes glow {
+        from {text-shadow: 0 0 5px #8500a7, 0 0 10px #8500a7, 0 0 15px #8500a7;}
+        to {text-shadow: 0 0 10px #8500a7, 0 0 20px #8500a7, 0 0 30px #8500a7;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://i.pinimg.com/originals/b9/7a/b0/b97ab0157bb79843e87a0c4d079b12df.gif" alt="Avatar" class="avatar">
+        <div class="name">Slax_yt</div>
+        <div class="bio">Hi, I make gaming montages</div>
+
+        <div class="links">
+            <a href="https://www.youtube.com/@SLAX_YT845" target="_blank" class="link">YouTube</a>
+            <a href="https://www.instagram.com/mukto.c.gon/" target="_blank" class="link">Instagram</a>
+            <a href="https://www.facebook.com/mukto.c.gon target="_blank class="link">Facebook</a>
+            <a href="https://slaxportfolio.netlify.app/" target="_blank" class="link">My Portfolio</a>
+            <a href="https://discord.gg/Bz92yMqD2A" target="_blank" class="link">Join My Server</a>
+            <a href="https://discord.gg/quAVNAHphD" target="_blank" class="link">Join Our Discord Family</a>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop >
+    <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=Nk8mG6dlYo4&s=25&e=52#gsc.tab=0" frameborder="0" allowfullscreen></iframe>
+    </audio>
+    
+    
+</body>
+</html>
